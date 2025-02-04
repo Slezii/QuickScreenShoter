@@ -64,12 +64,10 @@ namespace QuickScreenShoter.Core.ViewModels
         [RelayCommand]
         private async Task OpenSettings()
         {
-            // Open settings dialog
         }
 
         partial void OnRunInBackgroundChanged(bool value)
         {
-            //_settingsService.SaveSetting("RunInBackground", value);
         }
     }
 

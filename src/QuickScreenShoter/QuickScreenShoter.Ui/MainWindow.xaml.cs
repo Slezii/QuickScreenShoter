@@ -1,3 +1,4 @@
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -28,6 +29,7 @@ namespace QuickScreenShoter.Ui
         public MainWindow()
         {
             InitializeComponent();
+            ViewModel = App.Current.Services.GetService<MainViewModel>();
         }
     }
 }

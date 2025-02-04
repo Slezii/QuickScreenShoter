@@ -26,7 +26,6 @@ namespace QuickScreenShoter.Core.Services
 
         public async Task<Bitmap> CaptureAsync(Rectangle region)
         {
-            // Implementation for capturing screen region
             var bitmap = new Bitmap(region.Width, region.Height);
             using (var graphics = Graphics.FromImage(bitmap))
             {

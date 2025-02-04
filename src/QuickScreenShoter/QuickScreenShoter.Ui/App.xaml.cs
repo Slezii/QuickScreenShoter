@@ -27,6 +27,7 @@ namespace QuickScreenShoter.Ui
     /// </summary>
     public partial class App : Application
     {
+        public new static App Current => (App)Application.Current;
         public IServiceProvider Services { get; }
         /// <summary>
         /// Initializes the singleton application object.  This is the first line of authored code

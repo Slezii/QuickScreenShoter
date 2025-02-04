@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickScreenShoter.Core", "QuickScreenShoter.Core\QuickScreenShoter.Core.csproj", "{05EA8B82-5EAF-4E3D-89CB-70D29C89B2ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickScreenShoter.Ui", "QuickScreenShoter.Ui\QuickScreenShoter.Ui.csproj", "{7537E72D-4451-437A-BE79-EEC825DB5244}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05EA8B82-5EAF-4E3D-89CB-70D29C89B2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EA8B82-5EAF-4E3D-89CB-70D29C89B2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EA8B82-5EAF-4E3D-89CB-70D29C89B2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EA8B82-5EAF-4E3D-89CB-70D29C89B2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7537E72D-4451-437A-BE79-EEC825DB5244}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{7537E72D-4451-437A-BE79-EEC825DB5244}.Debug|Any CPU.Build.0 = Debug|x64
+		{7537E72D-4451-437A-BE79-EEC825DB5244}.Debug|Any CPU.Deploy.0 = Debug|x64
+		{7537E72D-4451-437A-BE79-EEC825DB5244}.Release|Any CPU.ActiveCfg = Release|x64
+		{7537E72D-4451-437A-BE79-EEC825DB5244}.Release|Any CPU.Build.0 = Release|x64
+		{7537E72D-4451-437A-BE79-EEC825DB5244}.Release|Any CPU.Deploy.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

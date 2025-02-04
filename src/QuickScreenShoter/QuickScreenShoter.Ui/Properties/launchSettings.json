@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "QuickScreenShoter.Ui (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "QuickScreenShoter.Ui (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

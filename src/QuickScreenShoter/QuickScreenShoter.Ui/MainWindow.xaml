@@ -1,0 +1,40 @@
+<Window
+    x:Class="QuickScreenShoter.Ui.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:QuickScreenShoter.Ui"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Padding="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Spacing="8">
+            <TextBlock Text="Screenshot Tool" Style="{StaticResource TitleTextBlockStyle}"/>
+            <TextBlock Text="{x:Bind ViewModel.StatusMessage, Mode=OneWay}" 
+                     Style="{StaticResource BodyTextBlockStyle}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Spacing="8">
+            <Button Command="{x:Bind ViewModel.StartCaptureCommand}">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE722;"/>
+                    <TextBlock Text="Capture (F11)"/>
+                </StackPanel>
+            </Button>
+            <Button Command="{x:Bind ViewModel.OpenSettingsCommand}">
+                <StackPanel Orientation="Horizontal" Spacing="8">
+                    <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xE713;"/>
+                    <TextBlock Text="Settings"/>
+                </StackPanel>
+            </Button>
+            <ToggleSwitch Header="Run in Background" 
+                         IsOn="{x:Bind ViewModel.RunInBackground, Mode=TwoWay}"/>
+        </StackPanel>
+    </Grid>
+</Window>

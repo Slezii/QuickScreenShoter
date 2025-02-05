@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace QuickScreenShoter.Core.ViewModels
 {
-    public partial class MainViewModel : ObservableObject
+    public partial class MainViewModel : BaseViewModel
     {
         private readonly IScreenshotService _screenshotService;
         private readonly ISettingsService _settingsService;
@@ -23,7 +23,8 @@ namespace QuickScreenShoter.Core.ViewModels
 
         public MainViewModel(
             IScreenshotService screenshotService,
-            ISettingsService settingsService)
+            ISettingsService settingsService,            
+            INavigationService navigationService) : base(navigationService)
         {
             _screenshotService = screenshotService;
             _settingsService = settingsService;
